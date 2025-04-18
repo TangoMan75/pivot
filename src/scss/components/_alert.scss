@@ -1,0 +1,52 @@
+/* alert */
+// https://www.w3.org/TR/wai-aria-1.0/roles#alert
+[role="alert"] {
+  display: block;
+  margin: var(--pico-typography-spacing-vertical) 0;
+  padding: var(--pico-spacing);
+  border: 1px solid var(--pico-blockquote-border-color);
+  border-left: 0.25rem solid var(--pico-blockquote-border-color);
+  border-radius: var(--pico-border-radius);
+  border-inline-start: 0.25rem solid var(--pico-blockquote-border-color);
+  background-color: var(--pico-background-color);
+
+  > header {
+    margin-bottom: calc(var(--pico-typography-spacing-vertical) * 0.5);
+    color: var(--pico-blockquote-footer-color);
+    font-weight: bolder;
+  }
+
+  &.info {
+    border-left: 0.25rem solid var(--pico-primary);
+    header {
+      color: var(--pico-primary);
+    }
+  }
+
+  &.success {
+    border-left: 0.25rem solid var(--pivot-success);
+    header {
+      color: var(--pivot-success);
+    }
+  }
+
+  &.warning {
+    border-left: 0.25rem solid var(--pivot-warning);
+    header {
+      color: var(--pivot-warning);
+    }
+  }
+
+  &.danger {
+    border-left: 0.25rem solid var(--pivot-danger);
+    header {
+      color: var(--pivot-danger);
+    }
+  }
+
+  > footer {
+    margin-top: calc(var(--pico-typography-spacing-vertical) * 0.5);
+    color: var(--pico-blockquote-footer-color);
+    font-size: smaller;
+  }
+}

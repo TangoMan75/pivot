@@ -1,0 +1,7 @@
+/* horizontal scroll */
+// A responsive horizontal scroll bar when the content overflows the container that appears only on hover
+.horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
