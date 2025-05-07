@@ -1,0 +1,14 @@
+/* tables */
+tbody {
+  th {
+    --pico-font-weight: 600;
+    white-space: nowrap;
+  }
+
+  tr:nth-child(odd) > {
+    th,
+    td {
+      background-color: var(--pico-muted-border-color);
+    }
+  }
+}
