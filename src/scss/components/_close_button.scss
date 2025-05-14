@@ -1,0 +1,17 @@
+/* close button */
+// defines styles for the close button on its own (outside of menuitem element)
+:not([role="menuitem"]) > button.close {
+  display: block;
+  width: var(--pivot-icon-size);
+  height: var(--pivot-icon-size);
+  padding: 0;
+  float: right;
+  border: none;
+  outline: none;
+  background-image: var(--pico-icon-close);
+  background-position: center;
+  background-size: auto var(--pico-spacing);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 0.5;
+}
