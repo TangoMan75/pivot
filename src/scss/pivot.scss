@@ -24,6 +24,7 @@
 @use "components/_close_button";
 @use "components/_footer";
 @use "components/_hgroup";
+@use "components/_menubar";
 @use "components/_navbar";
 @use "components/_table";
 @use "components/_tabs";
@@ -33,5 +34,6 @@
 
 // Animation
 @use "animation/_animate";
+@use "animation/_from-left";
 @use "animation/_spin";
 @use "animation/_zoom_in_blur";

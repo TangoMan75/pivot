@@ -125,6 +125,7 @@
                     <li><a href="#pivot__alerts">Alerts</a></li>
                     <li><a href="#pivot__buttons">Buttons</a></li>
                     <li><a href="#pivot__toolbar">Toolbar</a></li>
+                    <li><a href="#pivot__menubar">Menubar</a></li>
                     <li><a href="#pivot__toasts">Toasts</a></li>
                     <li><a href="#pivot__tabs">Tabs</a></li>
                     <li><a href="#pivot__grid">Grid</a></li>
@@ -276,8 +277,20 @@
             </article>
             <article id="pivot__toolbar">
                 <header role="banner" class="flex">
-                    <h3>📍 Toolbars / Menubars</h3>
+                    <h3>📍 Toolbars</h3>
                     <div>
+                        <ul role="toolbar">
+                            <li role="menuitem">
+                                <a class="animate" role="button" data-tooltip="bookmark">⭐</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="animate" role="button" data-tooltip="upvote">👍</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="animate" data-animation="zoom-in-blur" role="button"
+                                    data-tooltip="like">♥️</a>
+                            </li>
+                        </ul>
                         <ul role="toolbar">
                             <li role="menuitem">
                                 <a data-toast="You clicked the &lt;strong&gt;info&lt;/strong&gt; button on the toolbar."
@@ -307,8 +320,9 @@
                                 </a>
                             </li>
                             <li role="menuitem">
-                                <a class="close" aria-controls="pivot__toolbar" aria-label="Close"
-                                    data-tooltip="Close this article">
+                                <a data-toast="You clicked the &lt;strong&gt;danger&lt;/strong&gt; button on the toolbar."
+                                    data-toast-position="left"
+                                    data-toast-type="danger">
                                     <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- danger -->
                                         <circle cx="8" cy="8" r="8" fill="#ee402e" />
                                     </svg>
@@ -318,27 +332,17 @@
                     </div>
                 </header>
                 <p>
-                    <strong>Toolbars</strong> and <strong>menubars</strong> are used to group buttons and links in a compact way.
+                    <strong>Toolbars</strong> are used to group buttons in a compact way.
                     Texts, links, buttons, emojis, fonticons and inline <code>svg</code> inside
-                    <strong>toolbars</strong> and <strong>menubars</strong> will align vertically.
+                    <strong>toolbars</strong> will align vertically.
                 </p>
                 <p>
-                    A toobar must own a <code>role="toolbar"</code> attribute to be used as a toolbar.
+                    A toolbar must own a <code>role="toolbar"</code> attribute to be used as a toolbar.
                     All items contained in the toolbar must own <code>role="menuitem"</code> attribute to be displayed properly.
                 </p>
                 <p>
                     A separator will appear automatically when using multiple toolbars side by side.
                 </p>
-                <pre class="prismjs"><code class="language-html">&lt;ul role="menubar"&gt;
-&#9;&lt;li role="menuitem"&gt;
-&#9;&#9;&lt;span class="icon icon-date"&gt;&lt;/span&gt;
-&#9;&#9;&lt;small&gt;2025-01-01&lt;/small&gt;
-&#9;&lt;/li&gt;
-&#9;&lt;li role="menuitem"&gt;
-&#9;&#9;&lt;span class="icon icon-time"&gt;&lt;/span&gt;
-&#9;&#9;&lt;small&gt;12:30&lt;/small&gt;
-&#9;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
                 <pre class="prismjs"><code class="language-html">&lt;ul role="toolbar"&gt;
 &#9;&lt;li role="menuitem"&gt;
 &#9;&#9;&lt;button&gt;⭐&lt;/button&gt;
@@ -350,42 +354,98 @@
 &#9;&#9;&lt;a href="https://tangoman.io"&gt;♥️&lt;/a&gt;
 &#9;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-
                 <footer role="contentinfo" class="flex">
-                    <ul role="menubar">
-                        <li role="menuitem"><a href="#top">⬆️ Top</a></li>
-                    </ul>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__menubar">
+                <header role="banner" class="flex">
+                    <h3>📍 Menubars</h3>
+                    <div>
+                        <ul role="menubar">
+                            <li role="menuitem">
+                                <a class="contrast" aria-label="GitHub repository" href="https://github.com/TangoMan75/pivot"
+                                    target="_blank" rel="noopener noreferrer nofollow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24.25" viewBox="0 0 496 512">
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="contrast" aria-label="Twitter" href="https://x.com/tangomanparis" target="_blank"
+                                    rel="noopener noreferrer nofollow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+                                        <path
+                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                        </path>
+                                    </svg>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a id="theme-toggle" class="contrast" aria-label="Turn on dark mode" href="#!">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"
+                                        fill="currentColor">
+                                        <clipPath id="theme-toggle-cutout">
+                                            <path d="M0-11h25a1 1 0 0017 13v30H0Z"></path>
+                                        </clipPath>
+                                        <g clip-path="url(#theme-toggle-cutout)">
+                                            <circle cx="16" cy="16" r="8.4"></circle>
+                                            <path
+                                                d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    Dark mode
+                                </a>
+                            </li>
+                        </ul>
+                        <ul role="menubar">
+                            <li role="menuitem">
+                                <span class="icon icon-date"></span>
+                                <small>1970-01-01</small>
+                            </li>
+                            <li role="menuitem">
+                                <span class="icon icon-time"></span>
+                                <small>00:00</small>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <p>
+                    <strong>Menubars</strong> are used to group links in a collapsible menu.
+                </p>
+                <p>
+                    A menubar must own a <code>role="menubar"</code> attribute to be used as a menu.
+                    All items contained in the menubar must own <code>role="menuitem"</code> attribute to be displayed properly.
+                </p>
+                <p>
+                    A separator will appear automatically when using multiple menubars side by side.
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;ul role="menubar"&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;span class="icon icon-date"&gt;&lt;/span&gt;
+&#9;&#9;&lt;small&gt;2025-01-01&lt;/small&gt;
+&#9;&lt;/li&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;span class="icon icon-time"&gt;&lt;/span&gt;
+&#9;&#9;&lt;small&gt;12:30&lt;/small&gt;
+&#9;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <footer role="contentinfo" class="flex">
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
                     <div>
                         <ul role="menubar">
                             <li role="menuitem">
                                 <span class="icon icon-date"></span>
-                                <small>
-                                    <script>
-                                        const date = new Date();
-                                        document.write(date.toLocaleDateString('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit' }));
-                                    </script>
-                                </small>
+                                <small>1970-01-01</small>
                             </li>
                             <li role="menuitem">
                                 <span class="icon icon-time"></span>
-                                <small>
-                                    <script>
-                                        const time = new Date();
-                                        document.write(time.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }));
-                                    </script>
-                                </small>
-                            </li>
-                        </ul>
-                        <ul role="toolbar">
-                            <li role="menuitem">
-                                <a class="animate" role="button" data-tooltip="bookmark">⭐</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="animate" role="button" data-tooltip="upvote">👍</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="animate" data-animation="zoom-in-blur" role="button"
-                                    data-tooltip="like">♥️</a>
+                                <small>00:00</small>
                             </li>
                         </ul>
                     </div>
@@ -589,11 +649,11 @@
 &#9;&lt;/header&gt;
 &#9;&lt;p&gt; ... &lt;/p&gt;
 &lt;/article&gt;</code></pre>
-                    <p role="alert">
-                        Attribute <code>aria-labelledby=" ... "</code> that references the id of the corresponding tab is optional but recommended for accessibility.
-                    </p>
-                    <foot
-                    <a href="#top">⬆️ Top</a>
+                <p role="alert">
+                    Attribute <code>aria-labelledby=" ... "</code> that references the id of the corresponding tab is optional but recommended for accessibility.
+                </p>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
                 </footer>
             </article>
             <article id="pivot__grid">

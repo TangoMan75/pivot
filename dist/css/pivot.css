@@ -295,6 +295,44 @@ main hgroup h1 {
   }
 }
 
+/* menubar */
+[role=menubar] {
+  position: relative;
+}
+[role=menubar] .close {
+  display: none;
+}
+@media (max-width: 768px) {
+  [role=menubar] {
+    z-index: 1;
+    padding: var(--pico-spacing);
+    border: var(--pico-border-width) solid var(--pico-muted-border-color);
+    border-radius: var(--pico-border-radius);
+    background-color: var(--pico-background-color);
+  }
+  [role=menubar]:before {
+    display: none;
+  }
+  [role=menubar] li,
+  [role=menubar] [role=menuitem],
+  [role=menubar] .close {
+    display: block !important;
+    padding: var(--pico-spacing);
+  }
+  [role=menubar][aria-expanded=false] {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  [role=menubar][aria-expanded=false] .close {
+    background-image: var(--pico-icon-chevron);
+  }
+  [role=menubar][aria-expanded=false] li,
+  [role=menubar][aria-expanded=false] [role=menuitem] {
+    display: none !important;
+  }
+}
+
 /* navbar */
 [role=banner]:not(:has(.container)),
 [role=banner] > .container,
@@ -523,10 +561,6 @@ ul[role=toolbar] {
   padding-inline-start: 0;
 }
 
-#menu-toggle {
-  display: none;
-}
-
 /* animation */
 .animate:is(:inline) {
   display: inline-block;
@@ -534,6 +568,26 @@ ul[role=toolbar] {
 
 .remove-pseudo-elements:before, .remove-pseudo-elements:after {
   content: none;
+}
+
+/* from left animation */
+@keyframes from-left {
+  from {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  to {
+    position: relative;
+    left: 0px;
+  }
+}
+.from-left {
+  animation: 400ms from-left;
+  animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
 }
 
 /* spin animation */
