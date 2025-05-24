@@ -1,0 +1,31 @@
+/* toast */
+#toast-container {
+  display: flex;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+
+  &.left {
+    right: unset;
+    left: 1rem;
+  }
+
+  &.top {
+    left: 1rem;
+  }
+
+  &.bottom {
+    top: unset;
+    bottom: 1rem;
+    left: 1rem;
+    flex-direction: column;
+  }
+
+  [role="alert"] {
+    width: 100%;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+}
