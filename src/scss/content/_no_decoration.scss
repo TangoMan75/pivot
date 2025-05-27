@@ -1,0 +1,8 @@
+/* Remove decoration styles */
+ul.no-decoration > li {
+  list-style: none;
+}
+
+a.no-decoration {
+  text-decoration: none;
+}
