@@ -1,0 +1,48 @@
+/* menu */
+// https://www.w3.org/TR/wai-aria-1.0/roles#menu
+// https://www.w3.org/TR/wai-aria-1.0/roles#menubar
+// https://www.w3.org/TR/wai-aria-1.0/roles#toolbar
+// https://www.w3.org/TR/wai-aria-1.0/roles#menuitem
+[role="menu"] {
+  display: flex;
+  position: relative;
+}
+
+[role="menubar"],
+[role="toolbar"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  user-select: none;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    height: unset;
+  }
+
+  [role="button"],
+  [type="button"] {
+    border: none;
+    background-color: transparent;
+    box-shadow: none; // remove pico button:focus box shadow
+    color: var(--pico-contrast);
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li a,
+  [role="menuitem"] a {
+    text-decoration: none;
+  }
+}
