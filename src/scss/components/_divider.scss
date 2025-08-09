@@ -1,0 +1,11 @@
+/* divider */
+.divider:before {
+  height: 1.125rem;
+  margin-inline: var(--pico-nav-element-spacing-horizontal);
+  border-left: var(--pico-border-width) solid var(--pico-form-element-border-color);
+  content: "";
+}
+
+body > header nav .divider {
+  padding: var(--pico-nav-link-spacing-vertical) 0;
+}
