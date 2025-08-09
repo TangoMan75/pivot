@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>pivot.css | HTML5 Test Page</title>
+    <!-- Disables Internet Explorer compatibility mode (for IE 9 and IE 8 support) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Sets page scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+</head>
+<body>
+    <header id="header" role="banner">
+        <div class="container" role="navigation">
+            <a class="contrast no-decoration" href="index.html" aria-label="Home">
+                <strong>💫 pivot.css</strong>
+            </a>
+            <nav>
+                <ul role="menubar">
+                    <li role="menuitem"><a class="contrast" href="./index.html">pivot</a></li>
+                    <li role="menuitem"><a class="contrast" href="./fontawesome-test-page.html">fontawesome</a></li>
+                    <li role="menuitem"><a class="contrast" href="html5-test-page.html?link=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.css&link=./css/pivot.css">#html5-test-page</a></li>
+                </ul>
+                <span class="divider"></span>
+                <ul role="toolbar">
+                    <li role="menuitem">
+                        <a class="contrast" aria-label="GitHub repository" href="https://github.com/TangoMan75/pivot"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            😺
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a class="contrast" aria-label="Linktree" href="https://linktr.ee/tangoman75" target="_blank" rel="noopener noreferrer nofollow">
+                            🌴
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a id="theme-toggle"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main" class="container">
+        <section role="region">
+            <hgroup>
+                <h1>💫 Pivot HTML5 Test Page</h1>
+                <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst
+                    building CSS systems and frameworks.</p>
+            </hgroup>
+            <nav class="overflow-auto nowrap">
+                <ul>
+                    <li><a href="#text">#Text</a></li>
+                    <li><a href="#embedded">#Embedded content</a></li>
+                    <li><a href="#forms">#Form elements</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section role="region" id="style">
+            <article>
+                <header>
+                    <h2>🎨 Stylesheets</h2>
+                </header>
+                <ul role="contentinfo"></ul>
+                <form id="stylesheet-loader" action="javascript:void(0);">
+                    <fieldset>
+                        <legend>Load a stylesheet dynamically by entering the URL in the input field below</legend>
+                        <div role="group">
+                            <input type="text" placeholder="Stylesheet href ..." aria-label="Stylesheet href" />
+                            <input type="submit" value="🚀 Load stylesheet" />
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <section role="region" id="text">
+            <header>
+                <h2>📌 Text</h2>
+            </header>
+            <nav class="overflow-auto nowrap">
+                <ul role="list">
+                    <li role="listItem"><a href="#text__headings">Headings</a></li>
+                    <li role="listItem"><a href="#text__paragraphs">Paragraphs</a></li>
+                    <li role="listItem"><a href="#text__blockquotes">Blockquotes</a></li>
+                    <li role="listItem"><a href="#text__details">Details</a></li>
+                    <li role="listItem"><a href="#text__lists">Lists</a></li>
+                    <li role="listItem"><a href="#text__hr">Horizontal rules</a></li>
+                    <li role="listItem"><a href="#text__tables">Tabular data</a></li>
+                    <li role="listItem"><a href="#text__code">Code</a></li>
+                    <li role="listItem"><a href="#text__inline">Inline elements</a></li>
+                </ul>
+            </nav>
+            <article id="text__headings">
+                <header>
+                    <h3>📍 Headings</h3>
+                </header>
+                <div>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__paragraphs">
+                <header>
+                    <h3>📍 Paragraphs</h3>
+                </header>
+                <div>
+                    <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a
+                        self-contained unit of a discourse in writing dealing with a particular point or idea. A
+                        paragraph consists of one or more sentences. Though not required by the syntax of any language,
+                        paragraphs are usually an expected part of formal writing, used to organize longer prose. Emoji
+                        test: &#128512; &#128516; &#128525; &#128151;</p>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__blockquotes">
+                <header>
+                    <h3>📍 Blockquotes</h3>
+                </header>
+                <blockquote>
+                    <p>A block quotation (also known as a long quotation or extract) is a quotation in a written
+                        document, that is set off from the main text as a paragraph, or block of text.</p>
+                    <p>It is typically distinguished visually using indentation and a different typeface or smaller size
+                        quotation. It may or may not include a citation, usually placed at the bottom.</p>
+                    <cite><a href="#!">Said no one, ever.</a></cite>
+                </blockquote>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__details">
+                <header>
+                    <h3>📍 Details / Summary</h3>
+                </header>
+                <details>
+                    <summary>This is a summary</summary>
+                    The <code>&lt;summary&gt;</code> tag defines a visible heading for the <code>&lt;details&gt;</code>
+                    element. The heading can be clicked to view/hide the details.
+                </details>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__lists">
+                <header>
+                    <h3>📍 Lists</h3>
+                </header>
+                <div>
+                    <h3>Definition list</h3>
+                    <dl>
+                        <dt>Definition List Title</dt>
+                        <dd>This is a definition list division.</dd>
+                    </dl>
+                    <h3>Ordered List</h3>
+                    <ol type="1" role="list">
+                        <li role="listItem">List Item 1</li>
+                        <li role="listItem">List Item 2
+                            <ol type="A" role="list">
+                                <li role="listItem">List Item 1</li>
+                                <li role="listItem">List Item 2
+                                    <ol type="a" role="list">
+                                        <li role="listItem">List Item 1</li>
+                                        <li role="listItem">List Item 2
+                                            <ol type="I" role="list">
+                                                <li role="listItem">List Item 1</li>
+                                                <li role="listItem">List Item 2
+                                                    <ol type="i" role="list">
+                                                        <li role="listItem">List Item 1</li>
+                                                        <li role="listItem">List Item 2</li>
+                                                        <li role="listItem">List Item 3</li>
+                                                    </ol>
+                                                </li>
+                                                <li role="listItem">List Item 3</li>
+                                            </ol>
+                                        </li>
+                                        <li role="listItem">List Item 3</li>
+                                    </ol>
+                                </li>
+                                <li role="listItem">List Item 3</li>
+                            </ol>
+                        </li>
+                        <li role="listItem">List Item 3</li>
+                    </ol>
+                    <h3>Unordered List</h3>
+                    <ul role="list">
+                        <li role="listItem">List Item 1</li>
+                        <li role="listItem">List Item 2
+                            <ul role="list">
+                                <li role="listItem">List Item 1</li>
+                                <li role="listItem">List Item 2
+                                    <ul role="list">
+                                        <li role="listItem">List Item 1</li>
+                                        <li role="listItem">List Item 2
+                                            <ul role="list">
+                                                <li role="listItem">List Item 1</li>
+                                                <li role="listItem">List Item 2
+                                                    <ul role="list">
+                                                        <li role="listItem">List Item 1</li>
+                                                        <li role="listItem">List Item 2</li>
+                                                        <li role="listItem">List Item 3</li>
+                                                    </ul>
+                                                </li>
+                                                <li role="listItem">List Item 3</li>
+                                            </ul>
+                                        </li>
+                                        <li role="listItem">List Item 3</li>
+                                    </ul>
+                                </li>
+                                <li role="listItem">List Item 3</li>
+                            </ul>
+                        </li>
+                        <li role="listItem">List Item 3</li>
+                    </ul>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__hr">
+                <header>
+                    <h3>📍 Horizontal rules</h3>
+                </header>
+                <div>
+                    <hr>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__tables">
+                <header>
+                    <h3>📍 Tabular data</h3>
+                </header>
+                <table>
+                    <caption>Table Caption</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Column Heading 1</th>
+                            <th>Column Heading 2</th>
+                            <th>Column Heading 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Row 1</th>
+                            <td>Cell 1-1</td>
+                            <td>Cell 1-2</td>
+                            <td>Cell 1-3</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2</th>
+                            <td>Cell 2-1</td>
+                            <td>Cell 2-2</td>
+                            <td>Cell 2-3</td>
+                        </tr>
+                        <tr>
+                            <th>Row 3</th>
+                            <td>Cell 3-1</td>
+                            <td>Cell 3-2</td>
+                            <td>Cell 3-3</td>
+                        </tr>
+                        <tr>
+                            <th>Row 4</th>
+                            <td>Cell 4-1</td>
+                            <td>Cell 4-2</td>
+                            <td>Cell 4-3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th>Column Footer 1</th>
+                            <th>Column Footer 2</th>
+                            <th>Column Footer 3</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__code">
+                <header>
+                    <h3>📍 Code</h3>
+                </header>
+                <div>
+                    <p><strong>Keyboard input:</strong> <kbd>Ctrl</kbd> <kbd>Alt</kbd> + <kbd>Del</kbd></p>
+                    <p><strong>Inline code:</strong> <code>&lt;code&gt;code&lt;/code&gt;</code></p>
+                    <p>&lt;samp&gt; : <strong>Sample output:</strong> <samp>This is sample output from a computer
+                            program.</samp></p>
+                    <h2>Pre-formatted text</h2>
+                    <pre>
+                        P R E F O R M A T T E D T E X T
+                        ! " # $ % &amp; ' ( ) * + , - . /
+                        0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+                        @ A B C D E F G H I J K L M N O
+                        P Q R S T U V W X Y Z [ \ ] ^ _
+                        ` a b c d e f g h i j k l m n o
+                        p q r s t u v w x y z { | } ~
+                    </pre>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="text__inline">
+                <header>
+                    <h3>📍 Inline elements</h3>
+                </header>
+                <div>
+                    <p><code>&lt;a&gt;</code> :<a href="#!">This is a text link</a>.</p>
+                    <p><code>&lt;abbr&gt;</code> : Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                    <p>The <code>&lt;b&gt;</code> <b>element is stylistically different text from normal text, without
+                            any special importance.</b></p>
+                    <p><code>&lt;cite&gt;</code> : <cite>This is a citation.</cite></p>
+                    <p><code>&lt;del&gt;</code> : <del>This text is deleted</del> and <code>&lt;ins&gt;</code> :
+                        <ins>This text is inserted</ins>.</p>
+                    <p>The <code>&lt;dfn&gt;</code> <dfn>element indicates a definition.</dfn></p>
+                    <p><code>&lt;em&gt;</code> : <em>This text has added emphasis.</em></p>
+                    <p>The <code>&lt;i&gt;</code> <i>element is text that is offset from the normal text.</i></p>
+                    <p>The <code>&lt;mark&gt;</code> <mark>element indicates a highlight.</mark></p>
+                    <p><code>&lt;q&gt;</code> : <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This
+                            text is a short inline quotation.</q></p>
+                    <p><code>&lt;s&gt;</code> : <s>This text has a strikethrough</s>.</p>
+                    <p><code>&lt;small&gt;</code> : <small>This text is small for fine print, etc.</small></p>
+                    <p><code>&lt;strong&gt;</code> <strong>is used to indicate strong importance.</strong></p>
+                    <p><code>&lt;sub&gt;</code> : Subscript for things like H<sub>2</sub>O.</p>
+                    <p><code>&lt;sup&gt;</code> : Superscript<sup>®</sup>.</p>
+                    <p>The <code>&lt;time&gt;</code> element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+                    </p>
+                    <p>The <code>&lt;u&gt;</code> <u>element is text with an unarticulated, though explicitly rendered,
+                            non-textual annotation.</u></p>
+                    <p><code>&lt;var&gt;</code> : The variable element, such as <var>x</var> = <var>y</var>.</p>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+        </section>
+        <section role="region" id="embedded">
+            <header>
+                <h2>📌 Embedded content</h2>
+            </header>
+            <nav class="overflow-auto nowrap">
+                <ul role="list">
+                    <li role="listItem"><a href="#embedded__images">Images</a></li>
+                    <li role="listItem"><a href="#embedded__audio">Audio</a></li>
+                    <li role="listItem"><a href="#embedded__video">Video</a></li>
+                    <li role="listItem"><a href="#embedded__canvas">Canvas</a></li>
+                    <li role="listItem"><a href="#embedded__meter">Meter</a></li>
+                    <li role="listItem"><a href="#embedded__progress">Progress</a></li>
+                    <li role="listItem"><a href="#embedded__svg">Inline SVG</a></li>
+                    <li role="listItem"><a href="#embedded__iframe">IFrames</a></li>
+                </ul>
+            </nav>
+            <article id="embedded__images">
+                <header>
+                    <h3>📍 Images</h3>
+                </header>
+                <div>
+                    <h3>No <code>&lt;figure&gt;</code> element</h3>
+                    <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAW1JREFUeF7t1VEJADAMxNDVv7wK2mAq8vGqICQcnd29x2UMjCCZFh9EkFYPQWI9BBGkZiDG44cIEjMQw7EQQWIGYjgWIkjMQAzHQgSJGYjhWIggMQMxHAsRJGYghmMhgsQMxHAsRJCYgRiOhQgSMxDDsRBBYgZiOBYiSMxADMdCBIkZiOFYiCAxAzEcCxEkZiCGYyGCxAzEcCxEkJiBGI6FCBIzEMOxEEFiBmI4FiJIzEAMx0IEiRmI4ViIIDEDMRwLESRmIIZjIYLEDMRwLESQmIEYjoUIEjMQw7EQQWIGYjgWIkjMQAzHQgSJGYjhWIggMQMxHAsRJGYghmMhgsQMxHAsRJCYgRiOhQgSMxDDsRBBYgZiOBYiSMxADMdCBIkZiOFYiCAxAzEcCxEkZiCGYyGCxAzEcCxEkJiBGI6FCBIzEMOxEEFiBmI4FiJIzEAMx0IEiRmI4ViIIDEDMRwLESRmIIZjIYLEDMRwHlf1W1Ru7RVLAAAAAElFTkSuQmCC"
+                            alt="Image alt text"></p>
+                    <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+                    <figure><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAW1JREFUeF7t1VEJADAMxNDVv7wK2mAq8vGqICQcnd29x2UMjCCZFh9EkFYPQWI9BBGkZiDG44cIEjMQw7EQQWIGYjgWIkjMQAzHQgSJGYjhWIggMQMxHAsRJGYghmMhgsQMxHAsRJCYgRiOhQgSMxDDsRBBYgZiOBYiSMxADMdCBIkZiOFYiCAxAzEcCxEkZiCGYyGCxAzEcCxEkJiBGI6FCBIzEMOxEEFiBmI4FiJIzEAMx0IEiRmI4ViIIDEDMRwLESRmIIZjIYLEDMRwLESQmIEYjoUIEjMQw7EQQWIGYjgWIkjMQAzHQgSJGYjhWIggMQMxHAsRJGYghmMhgsQMxHAsRJCYgRiOhQgSMxDDsRBBYgZiOBYiSMxADMdCBIkZiOFYiCAxAzEcCxEkZiCGYyGCxAzEcCxEkJiBGI6FCBIzEMOxEEFiBmI4FiJIzEAMx0IEiRmI4ViIIDEDMRwLESRmIIZjIYLEDMRwHlf1W1Ru7RVLAAAAAElFTkSuQmCC"
+                            alt="Image alt text"></figure>
+                    <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+                    <figure>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAW1JREFUeF7t1VEJADAMxNDVv7wK2mAq8vGqICQcnd29x2UMjCCZFh9EkFYPQWI9BBGkZiDG44cIEjMQw7EQQWIGYjgWIkjMQAzHQgSJGYjhWIggMQMxHAsRJGYghmMhgsQMxHAsRJCYgRiOhQgSMxDDsRBBYgZiOBYiSMxADMdCBIkZiOFYiCAxAzEcCxEkZiCGYyGCxAzEcCxEkJiBGI6FCBIzEMOxEEFiBmI4FiJIzEAMx0IEiRmI4ViIIDEDMRwLESRmIIZjIYLEDMRwLESQmIEYjoUIEjMQw7EQQWIGYjgWIkjMQAzHQgSJGYjhWIggMQMxHAsRJGYghmMhgsQMxHAsRJCYgRiOhQgSMxDDsRBBYgZiOBYiSMxADMdCBIkZiOFYiCAxAzEcCxEkZiCGYyGCxAzEcCxEkJiBGI6FCBIzEMOxEEFiBmI4FiJIzEAMx0IEiRmI4ViIIDEDMRwLESRmIIZjIYLEDMRwHlf1W1Ru7RVLAAAAAElFTkSuQmCC"
+                            alt="Image alt text">
+                        <figcaption>Here is a caption for this image.</figcaption>
+                    </figure>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__audio">
+                <header>
+                    <h3>📍 Audio</h3>
+                </header>
+                <div>
+                    <audio controls="">audio</audio>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__video">
+                <header>
+                    <h3>📍 Video</h3>
+                </header>
+                <div>
+                    <video controls="">video</video>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__canvas">
+                <header>
+                    <h3>📍 Canvas</h3>
+                </header>
+                <div>
+                    <canvas>canvas</canvas>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__meter">
+                <header>
+                    <h3>📍 Meter</h3>
+                </header>
+                <div>
+                    <meter value="2" min="0" max="10">2 out of 10</meter>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__progress">
+                <header>
+                    <h3>📍 Progress</h3>
+                </header>
+                <div>
+                    <progress>progress</progress>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__svg">
+                <header>
+                    <h3>📍 Inline SVG</h3>
+                </header>
+                <div>
+                    <svg width="100px" height="100px">
+                        <circle cx="50" cy="50" r="50" fill="#1fa3ec"></circle>
+                    </svg>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="embedded__iframe">
+                <header>
+                    <h3>📍 IFrame</h3>
+                </header>
+                <div>
+                    <iframe src="" height="200"></iframe>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+        </section>
+        <section role="region" id="forms">
+            <header>
+                <h2>📌 Form elements</h2>
+            </header>
+            <nav class="overflow-auto nowrap">
+                <ul role="list">
+                    <li role="listItem"><a href="#forms__input">Input fields</a></li>
+                    <li role="listItem"><a href="#forms__select">Select menus</a></li>
+                    <li role="listItem"><a href="#forms__checkbox">Checkboxes</a></li>
+                    <li role="listItem"><a href="#forms__radio">Radio buttons</a></li>
+                    <li role="listItem"><a href="#forms__textareas">Textareas</a></li>
+                    <li role="listItem"><a href="#forms__html5">HTML5 inputs</a></li>
+                    <li role="listItem"><a href="#forms__action">Action buttons</a></li>
+                </ul>
+            </nav>
+            <article id="forms__input">
+                <header>
+                    <h3>📍 Input fields</h3>
+                </header>
+                <fieldset>
+                    <legend>Input fields</legend>
+                    <p>
+                        <label for="input__text">Text Input</label>
+                        <input id="input__text" type="text" placeholder="Text Input">
+                    </p>
+                    <p>
+                        <label for="input__text--disabled">Text Input <i>(disabled)</i></label>
+                        <input id="input__text--disabled" type="text" placeholder="Text Input" disabled
+                            aria-disabled="true">
+                    </p>
+                    <p>
+                        <label for="input__password">Password</label>
+                        <input id="input__password" type="password" placeholder="Type your Password">
+                    </p>
+                    <p>
+                        <label for="input__webaddress">Web Address</label>
+                        <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+                    </p>
+                    <p>
+                        <label for="input__emailaddress">Email Address</label>
+                        <input id="input__emailaddress" type="email" placeholder="name@email.com">
+                    </p>
+                    <p>
+                        <label for="input__phone">Phone Number</label>
+                        <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+                    </p>
+                    <p>
+                        <label for="input__search">Search</label>
+                        <input id="input__search" type="search" placeholder="Enter Search Term">
+                    </p>
+                    <p>
+                        <label for="input__file">File</label>
+                        <input id="input__file" type="file">
+                    </p>
+                    <p>
+                        <label for="input__text2">Number Input</label>
+                        <input id="input__text2" type="number" placeholder="Enter a Number">
+                    </p>
+                    <p>
+                        <label for="input__keygen">Keygen</label>
+                        <input id="input__keygen" type="keygen" placeholder="Enter a key">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Validation</legend>
+                    <p>
+                        <label for="input__text--valid" aria-invalid="false">Valid</label>
+                        <input id="input__text--valid" aria-invalid="false" type="text" placeholder="Text Input">
+                    </p>
+                    <p>
+                        <label for="input__text--invalid" aria-invalid="true">Invalid</label>
+                        <input id="input__text--invalid" aria-invalid="true" type="text" placeholder="Text Input">
+                    </p>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="forms__select">
+                <header>
+                    <h3>📍 Select menus</h3>
+                </header>
+                <fieldset>
+                    <legend>Select menus</legend>
+                    <p>
+                        <label for="select">Select</label>
+                        <select id="select">
+                            <optgroup label="Option Group">
+                                <option>Option One</option>
+                                <option selected="selected" aria-selected="true">Option Two (selected)</option>
+                                <option>Option Three</option>
+                                <option disabled aria-disabled="true">Option Four (disabled)</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="forms__checkbox">
+                <header>
+                    <h3>📍 Checkboxes</h3>
+                </header>
+                <fieldset>
+                    <legend>Checkboxes</legend>
+                    <ul role="list" class="list list--bare">
+                        <li role="listItem">
+                            <label for="checkbox__a">
+                                <input id="checkbox__a" name="checkbox__a" type="checkbox" aria-checked="true" checked>
+                                Choice A <i>(checked)</i>
+                            </label>
+                        </li>
+                        <li role="listItem">
+                            <label for="checkbox__b">
+                                <input id="checkbox__b" name="checkbox__b" type="checkbox">
+                                Choice B <i>(indeterminate)</i>
+                            </label>
+                        </li>
+                        <li role="listItem">
+                            <label for="checkbox__c">
+                                <input id="checkbox__c" name="checkbox__c" type="checkbox">
+                                Choice C <i>(unchecked)</i>
+                            </label>
+                        </li>
+                        <li role="listItem">
+                            <label for="checkbox__d">
+                                <input id="checkbox__d" name="checkbox__d" type="checkbox" disabled
+                                    aria-disabled="true">
+                                Choice D <i>(disabled)</i>
+                            </label>
+                        </li>
+                        <script>
+                            window.onload = function () {
+                                const checkbox = document.getElementById('checkbox__b');
+                                checkbox.indeterminate = true;
+                            }
+                        </script>
+                    </ul>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="forms__radio">
+                <header>
+                    <h3>📍 Radio buttons</h3>
+                </header>
+                <fieldset>
+                    <legend>Radio buttons</legend>
+                    <ul role="list" class="list list--bare">
+                        <li role="listItem">
+                            <label for="radio__1">
+                                <input id="radio__1" name="radio" type="radio" checked="checked">
+                                Option 1 <i>(checked)</i>
+                            </label>
+                        </li>
+                        <li role="listItem">
+                            <label for="radio__2">
+                                <input id="radio__2" name="radio" type="radio">
+                                Option 2 <i>(unchecked)</i>
+                            </label>
+                        </li>
+                        <li role="listItem">
+                            <label for="radio__3">
+                                <input id="radio__3" name="radio" type="radio" disabled aria-disabled="true">
+                                Option 3 <i>(disabled)</i>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="forms__textareas">
+                <header>
+                    <h3>📍 Textareas</h3>
+                </header>
+                <fieldset>
+                    <legend>Textareas</legend>
+                    <p>
+                        <label for="textarea">Textarea</label>
+                        <textarea id="textarea" rows="2"
+                            placeholder="Enter your message here">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Doloribus, labore. Tempora, quibusdam. Voluptas ab veniam sint, voluptates eius quod odit rem, quasi cupiditate alias, autem reprehenderit molestias! Quisquam, qui corporis.</textarea>
+                    </p>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="forms__html5">
+                <header>
+                    <h3>📍 HTML5 inputs</h3>
+                </header>
+                <fieldset>
+                    <legend>HTML5 inputs</legend>
+                    <p>
+                        <label for="input__color">Color input</label>
+                        <input type="color" id="input__color" value="#000000">
+                    </p>
+                    <p>
+                        <label for="input__number">Number input</label>
+                        <input type="number" id="input__number" min="0" max="10" value="5">
+                    </p>
+                    <p>
+                        <label for="input__range">Range input</label>
+                        <input type="range" id="input__range" value="10">
+                    </p>
+                    <p>
+                        <label for="input__date">Date input</label>
+                        <input type="date" id="input__date" value="1970-01-01">
+                    </p>
+                    <p>
+                        <label for="input__month">Month input</label>
+                        <input type="month" id="input__month" value="1970-01">
+                    </p>
+                    <p>
+                        <label for="input__week">Week input</label>
+                        <input type="week" id="input__week" value="1970-W01">
+                    </p>
+                    <p>
+                        <label for="input__datetime-local">Datetime-local input</label>
+                        <input type="datetime-local" id="input__datetime-local" value="1970-01-01T00:00">
+                    </p>
+                    <p>
+                        <label for="input__time">Time input</label>
+                        <input type="time" id="input__time" value="12:00">
+                    </p>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="forms__action">
+                <header>
+                    <h3>📍 Action buttons</h3>
+                </header>
+                <fieldset>
+                    <legend>Action buttons</legend>
+                    <p>
+                        <input type="submit" value="&lt;input type=submit&gt;">
+                        <input type="button" value="&lt;input type=button&gt;">
+                        <input type="reset" value="&lt;input type=reset&gt;">
+                        <input type="submit" value="&lt;input disabled&gt;" disabled aria-disabled="true">
+                    </p>
+                    <p>
+                        <button type="submit">&lt;button type="submit"&gt;</button>
+                        <button type="button">&lt;button type="button"&gt;</button>
+                        <button type="reset">&lt;button type="reset"&gt;</button>
+                        <button type="button" disabled aria-disabled="true">&lt;button type="button" disabled
+                            aria-disabled="true"&gt;</button>
+                    </p>
+                </fieldset>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer role="contentinfo" class="container footer">
+        <ul>
+            <li>
+                <p>&copy; 2025 Matthias Morin</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Author : <a href="https://tangoman.io" target="_blank" rel="noopener noreferrer nofollow">Matthias
+                        Morin</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Made with : <a href="https://picocss.com" target="_blank"
+                    rel="noopener noreferrer nofollow">picocss</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Made with :
+                    <a href="https://github.com/cbracco/html5-test-page" target="_blank"
+                        rel="noopener noreferrer nofollow">
+                        Chris Bracco html5-test-page
+                    </a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Icons : <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer nofollow">Font Awesome by Dave Gandy</a>
+                    License <a href="http://scripts.sil.org/OFL" target="_blank" rel="noopener noreferrer nofollow">SIL OFL 1.1</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Icons :
+                    <a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji" target="_blank"
+                    rel="noopener noreferrer nofollow">Google Noto Color Emoji</a>
+                    License <a href="http://scripts.sil.org/OFL" target="_blank" rel="noopener noreferrer nofollow">SIL OFL 1.1</a>
+                </small>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        /**
+         * spin animation
+         */
+        const spin = (element) => {
+            element.classList.add('spin');
+            setTimeout(() => {
+                element.classList.remove('spin');
+            }, 440);
+        }
+
+        /**
+         * menubar collapse
+         */
+        const initMenubarCollapse = () => {
+            const menubar = document.querySelector('nav [role="menubar"]');
+            if (!menubar) return;
+            
+            const button = document.createElement('button');
+            button.className = 'close';
+            button.setAttribute('aria-label', 'Close');
+            button.setAttribute('tabindex', '-1');
+            button.setAttribute('role', 'button');
+            menubar.appendChild(button);
+
+            if (window.innerWidth < 768) {
+                menubar.setAttribute('aria-expanded', 'false');
+            }
+
+            button.addEventListener('click', () => {
+                const isVisible = menubar.getAttribute('aria-expanded') !== 'false';
+                menubar.setAttribute('aria-expanded', !isVisible);
+            });
+        };
+        initMenubarCollapse();
+
+        /**
+         * theme toggle
+         */
+        const setTheme = (theme = 'light') => {
+            const themeToggle = document.getElementById('theme-toggle');
+            document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+            themeToggle.setAttribute('aria-label', theme === 'light' ? 'Turn on dark mode' : 'Turn off dark mode');
+            themeToggle.textContent = document.documentElement.dataset.theme === 'light' ? '☀️' : '🌙';
+            spin(themeToggle);
+        }
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+        });
+        setTheme('light');
+
+        /**
+         * stylesheet loader
+         */
+        const injectStylesheet = (url) => {
+            document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${url}">`);
+        }
+        const removeStylesheet = (id) => {
+            link = document.getElementById(id);
+            if (link) {
+                link.remove();
+            }
+        }
+        const getStylesheets = () => {
+            const params = new URLSearchParams(window.location.search).getAll('link');
+            if (params.length) {
+                params.forEach(link => injectStylesheet(link));
+            }
+        }
+        getStylesheets();
+        const liTemplate = (link) => {
+            return `
+                <li>
+                    <a href="${link.href}" target="_blank" rel="noopener noreferrer nofollow">
+                        ${link.href}
+                    </a>
+                    <div style="float:right;" role="toolbar">
+                        <button>🗑️</button>
+                    <div>
+                </li>
+            `;
+        }
+        const updateContentInfo = () => {
+            const links = [...document.querySelectorAll('link[rel="stylesheet"]')];
+            // create an id for each info element
+            links.forEach((link, index) => link.id = `stylesheet-${index}`);
+            const contentinfo = document.querySelector('[role="contentinfo"]');
+            if (!links.length) {
+                contentinfo.innerHTML = '<li>No stylesheets loaded</li>';
+                return;
+            }
+            contentinfo.innerHTML = links.map(link => liTemplate(link)).join('');
+            // setup event listener for the button
+            contentinfo.querySelectorAll('button').forEach((button, index) => {
+                button.addEventListener('click', (event) => {
+                    removeStylesheet(`stylesheet-${index}`);
+                    event.target.closest('li').remove();
+                });
+            });
+        }
+        updateContentInfo();
+        // setup event listener for the loader button
+        document.getElementById('stylesheet-loader').addEventListener('submit', (e) => {
+            href = e.target.querySelector('input[type="text"]').value;
+            if (href) {
+                const params = new URLSearchParams(window.location.search);
+                params.append('link', href);
+                injectStylesheet(href);
+            }
+        });
+    </script>
+</body>
+</html>
