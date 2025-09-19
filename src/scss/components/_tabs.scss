@@ -1,0 +1,57 @@
+/* tabs */
+// https://www.w3.org/TR/wai-aria-1.0/roles#tablist
+[role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: var(--pico-block-spacing-vertical);
+  padding: 0;
+  user-select: none;
+
+  // https://www.w3.org/TR/wai-aria-1.0/roles#tab
+  > [role="tab"] {
+    --pico-border-color: var(--pico-form-element-border-color);
+    --pivot-tab-border-color: rgba(0, 0, 0, 0);
+    --pivot-tab-border-bottom-color: var(--pico-form-element-border-color);
+    max-width: 16rem;
+    padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+    overflow: hidden;
+    border-top: var(--pico-border-width) solid var(--pivot-tab-border-color);
+    border-right: var(--pico-border-width) solid var(--pivot-tab-border-color);
+    border-bottom: var(--pico-border-width) solid var(--pivot-tab-border-bottom-color);
+    border-left: var(--pico-border-width) solid var(--pivot-tab-border-color);
+    border-top-right-radius: var(--pico-border-radius);
+    border-top-left-radius: var(--pico-border-radius);
+    list-style: none;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      border-left-color var(--pico-transition),
+      border-right-color var(--pico-transition),
+      border-top-color var(--pico-transition);
+
+    &[disabled],
+    &[aria-disabled="true"] {
+      color: var(--pico-muted-color);
+      cursor: default;
+      button {
+        pointer-events: none;
+      }
+    }
+
+    &:hover:not([disabled]):not([aria-disabled="true"]):not([aria-selected="true"]) {
+      --pivot-tab-border-color: var(--pico-muted-border-color);
+    }
+
+    &[aria-selected="true"] {
+      --pivot-tab-border-bottom-color: rgba(0, 0, 0, 0);
+      --pivot-tab-border-color: var(--pico-form-element-border-color);
+    }
+
+    > button {
+      margin-left: calc(var(--pico-form-element-spacing-horizontal) / 2);
+    }
+  }
+}

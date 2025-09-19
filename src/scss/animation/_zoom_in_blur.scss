@@ -1,0 +1,15 @@
+/* spin animation */
+@keyframes zoomInBlur {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale3d(3, 3, 3);
+    opacity: 0;
+  }
+}
+
+.zoom-in-blur {
+  animation: zoomInBlur 400ms ease-out;
+}

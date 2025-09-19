@@ -1,0 +1,40 @@
+/*
+ * These colors are picked from pico palette found here :
+ * https://github.com/picocss/pico/blob/main/css/pico.colors.css
+ */
+:root {
+  --sand-750: #3d3b35;
+  --sand-800: #32302b;
+
+  --pico-color-green-250: 93, 209, 33;
+  --pico-color-green-350: 78, 179, 27;
+  --pico-color-green-500: 57, 135, 18;
+  --pico-color-green-550: 51, 121, 15;
+
+  --pico-color-amber-200: 255, 191, 0;
+  --pico-color-pumpkin-300: 255, 149, 0;
+  --pico-color-pumpkin-350: 228, 133, 0;
+  --pico-color-pumpkin-500: 173, 100, 0;
+
+  --pico-color-red-250: 245, 163, 144;
+  --pico-color-red-450: 238, 64, 46;
+  --pico-color-red-500: 217, 53, 38;
+  --pico-color-red-550: 197, 47, 33;
+
+  --pivot-success: rgb(var(--pico-color-green-350));
+  --pivot-success-background: rgb(var(--pico-color-green-550));
+  --pivot-success-hover-background: rgb(var(--pico-color-green-500));
+  --pivot-success-focus: rgba(var(--pico-color-green-350), 0.375);
+
+  --pivot-warning: rgb(var(--pico-color-amber-200));
+  --pivot-warning-background: rgb(var(--pico-color-pumpkin-350));
+  --pivot-warning-hover-background: rgb(var(--pico-color-pumpkin-300));
+  --pivot-warning-focus: rgba(var(--pico-color-pumpkin-350), 0.375);
+
+  --pivot-danger: rgb(var(--pico-color-red-450));
+  --pivot-danger-background: rgb(var(--pico-color-red-550));
+  --pivot-danger-hover-background: rgb(var(--pico-color-red-500));
+  --pivot-danger-focus: rgba(var(--pico-color-red-450), 0.375);
+
+  --pivot-icon-size: 1rem;
+}

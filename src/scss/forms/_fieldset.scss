@@ -1,0 +1,13 @@
+/* form */
+fieldset {
+  padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+  border: var(--pico-border-width) solid var(--pico-muted-border-color);
+  border-radius: var(--pico-border-radius);
+
+  > legend {
+    margin-left: var(--pico-form-element-spacing-horizontal);
+    padding-right: var(--pico-form-element-spacing-horizontal);
+    padding-left: var(--pico-form-element-spacing-horizontal);
+    color: var(--pico-muted-color);
+  }
+}

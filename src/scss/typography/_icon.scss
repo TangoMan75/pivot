@@ -1,0 +1,57 @@
+/* icon */
+.icon {
+  display: inline-block;
+  width: var(--pivot-icon-size);
+  height: var(--pivot-icon-size);
+  padding: var(--pico-nav-link-spacing-vertical) var(--pico-nav-link-spacing-horizontal);
+  vertical-align: -0.18rem;
+}
+
+.icon {
+  &:not(svg) {
+    background-position: center;
+    background-size: auto var(--pivot-icon-size);
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  &-checkbox {
+    background-image: var(--pico-icon-checkbox);
+  }
+
+  &-minus {
+    background-image: var(--pico-icon-minus);
+  }
+
+  &-chevron {
+    background-image: var(--pico-icon-chevron);
+  }
+
+  &-date {
+    background-image: var(--pico-icon-date);
+  }
+
+  &-time {
+    background-image: var(--pico-icon-time);
+  }
+
+  &-search {
+    background-image: var(--pico-icon-search);
+  }
+
+  &-close {
+    background-image: var(--pico-icon-close);
+  }
+
+  &-loading {
+    background-image: var(--pico-icon-loading);
+  }
+
+  &-valid {
+    background-image: var(--pico-icon-valid);
+  }
+
+  &-invalid {
+    background-image: var(--pico-icon-invalid);
+  }
+}

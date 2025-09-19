@@ -1,0 +1,35 @@
+/* toast */
+.toast-container {
+  display: flex;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  max-width: 510px;
+
+  &.left {
+    right: unset;
+    left: 1rem;
+  }
+
+  &.top {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.bottom {
+    top: unset;
+    bottom: 1rem;
+    left: 50%;
+    flex-direction: column;
+    transform: translateX(-50%);
+  }
+
+  [role="alert"] {
+    width: 100%;
+    margin-top: calc(var(--pico-typography-spacing-vertical) * 0.5);
+    margin-bottom: calc(var(--pico-typography-spacing-vertical) * 0.5);
+    box-shadow: var(--pico-card-box-shadow);
+  }
+}

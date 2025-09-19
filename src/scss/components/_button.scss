@@ -1,0 +1,37 @@
+/* button */
+// Defines semantic styles for buttons based on different states (success, warning, and danger)
+button,
+[role="button"] {
+  &.success {
+    --pico-background-color: var(--pivot-success-background);
+    --pico-border-color: var(--pivot-success-background);
+    --pico-primary-focus: var(--pivot-success-focus);
+
+    &:is([aria-current]:not([aria-current="false"]), :hover, :active, :focus) {
+      --pico-background-color: var(--pivot-success-hover-background);
+      --pico-border-color: var(--pivot-success-hover-background);
+    }
+  }
+
+  &.warning {
+    --pico-background-color: var(--pivot-warning-background);
+    --pico-border-color: var(--pivot-warning-background);
+    --pico-primary-focus: var(--pivot-warning-focus);
+
+    &:is([aria-current]:not([aria-current="false"]), :hover, :active, :focus) {
+      --pico-background-color: var(--pivot-warning-hover-background);
+      --pico-border-color: var(--pivot-warning-hover-background);
+    }
+  }
+
+  &.danger {
+    --pico-background-color: var(--pivot-danger-background);
+    --pico-border-color: var(--pivot-danger-background);
+    --pico-primary-focus: var(--pivot-danger-focus);
+
+    &:is([aria-current]:not([aria-current="false"]), :hover, :active, :focus) {
+      --pico-background-color: var(--pivot-danger-hover-background);
+      --pico-border-color: var(--pivot-danger-hover-background);
+    }
+  }
+}

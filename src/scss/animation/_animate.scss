@@ -1,0 +1,10 @@
+/* animation */
+// CSS `transform` does not apply to inline elements because they lack the necessary box model properties required for transformations.
+// To animate inline elements, apply 'display: inline-block' directly to the element or via JavaScript.
+
+.remove-pseudo-elements {
+  &:before,
+  &:after {
+    content: none; // remove tooltip during animation
+  }
+}
