@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>pivot.css | Documentation</title>
+    <!-- Disables Internet Explorer compatibility mode (for IE 9 and IE 8 support) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Sets page scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <!-- https://prismjs.com -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet">
+    <!-- https://picocss.com/docs -->
+    <!-- https://github.com/picocss/pico/blob/main/css/pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="./css/pivot.css">
+</head>
+<body>
+    <header id="header" role="banner">
+        <div class="container" role="navigation">
+            <a class="contrast no-decoration" href="#top" aria-label="Home">
+                <strong>💫 pivot.css</strong>
+            </a>
+            <nav>
+                <div role="menu">
+                    <ul role="menubar">
+                        <li role="menuitem"><a class="contrast" href="#top">#pivot</a></li>
+                        <li role="menuitem"><a class="contrast" href="fontawesome-test-page.html">fontawesome</a></li>
+                        <li role="menuitem"><a class="contrast" href="html5-test-page.html?link=https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.css&link=./css/pivot.css">html5-test-page</a></li>
+                    </ul>
+                </div>
+                <span class="divider"></span>
+                <ul role="toolbar">
+                    <li role="menuitem">
+                        <a class="contrast" aria-label="GitHub repository" href="https://github.com/TangoMan75/pivot"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24.25" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a class="contrast" aria-label="Linktree" href="https://linktr.ee/tangoman75" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 512 512">
+                                <path d="m 293.03983,124.86333 85.43328,-87.822493 49.58696,50.781656 -89.61488,85.432917 H 464.5043 v 70.49778 H 337.84727 l 90.2128,87.62192 -49.58696,49.78625 L 255.99954,258.0899 133.52615,381.16136 83.939189,331.5744 174.15144,243.95066 H 47.4957 V 173.25541 H 173.55409 L 83.939189,87.822493 133.52615,37.040837 218.95925,124.86333 V 0 h 74.08058 z m -74.08058,219.85563 h 74.08058 V 512 h -74.08058 z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a id="theme-toggle" class="contrast" aria-label="Turn on dark mode" href="#!">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 32 32"
+                                fill="currentColor">
+                                <clipPath id="theme-toggle-cutout">
+                                    <path d="M0-11h25a1 1 0 0017 13v30H0Z"></path>
+                                </clipPath>
+                                <g clip-path="url(#theme-toggle-cutout)">
+                                    <circle cx="16" cy="16" r="8.4"></circle>
+                                    <path
+                                        d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main" class="container">
+        <section role="region">
+            <hgroup>
+                <h1>💫 pivot.css</h1>
+                <p>
+                    <strong>TangoMan Pivot CSS</strong> is a lightweight extension of
+                    <a href="https://picocss.com" target="_blank" rel="noopener noreferrer nofollow">picoss</a>
+                    <em>(the minimal CSS framework for semantic HTML)</em> focused on providing a boilerplate for building single page applications.
+                </p>
+            </hgroup>
+            <nav class="overflow-auto nowrap">
+                <ul>
+                    <li>
+                        <a href="https://picocss.com/docs" target="_blank" rel="noopener noreferrer nofollow">
+                            <span class="icon icon-search"></span>&nbsp;
+                            pico.css documentation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/picocss/pico/blob/main/css/pico.css" target="_blank"
+                            rel="noopener noreferrer nofollow">
+                            <span class="icon icon-search"></span>&nbsp;
+                            pico.css github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/TR/wai-aria-1.0/roles#role_definitions" target="_blank"
+                            rel="noopener noreferrer nofollow">
+                            <span class="icon icon-search"></span>&nbsp;
+                            w3.org aria roles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/TR/wai-aria-1.0/states_and_properties#global_states_header"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            <span class="icon icon-search"></span>&nbsp;
+                            w3.org aria states
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section role="region" id="pivot">
+            <header>
+                <h2>📌 pivot.css Documentation</h2>
+            </header>
+            <nav class="overflow-auto nowrap">
+                <ul>
+                    <li><a href="#pivot__alerts">Alerts</a></li>
+                    <li><a href="#pivot__buttons">Buttons</a></li>
+                    <li><a href="#pivot__badges">Badges</a></li>
+                    <li><a href="#pivot__toolbar">Toolbar</a></li>
+                    <li><a href="#pivot__menubar">Menubar</a></li>
+                    <li><a href="#pivot__toasts">Toasts</a></li>
+                    <li><a href="#pivot__tabs">Tabs</a></li>
+                    <li><a href="#pivot__flex">Flex</a></li>
+                    <li><a href="#pivot__grid">Grid</a></li>
+                    <li><a href="#pico__icons">Icons</a></li>
+                </ul>
+            </nav>
+            <article id="pivot__alerts">
+                <header>
+                    <h3>📍 Alerts</h3>
+                </header>
+                <p>
+                    Alert styles will be applied on <strong>any</strong> element with a <code>role="alert"</code>.
+                </p>
+                <p>
+                    Four types of <strong>alerts</strong> can be displayed :
+                    <ul>
+                        <li><code>class="info"</code></li>
+                        <li><code>class="success"</code></li>
+                        <li><code>class="warning"</code></li>
+                        <li><code>class="danger"</code></li>
+                    </ul>
+                </p>
+                <p>
+                    Although optional, alerts <strong>can</strong> own a <code>header</code>, a <code>footer</code>, and a <code>button class="close"</code>.
+                </p>
+                <div id="alert-default" role="alert">
+                    <header>
+                        <button class="close" role="button" aria-label="Close" aria-controls="alert-default"></button>
+                        ℹ️ alert-default
+                    </header>
+                    <p role="alertdialog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <footer>Lorem ipsum</footer>
+                </div>
+                <div id="alert-info" class="info" role="alert">
+                    <header>
+                        <button class="close" role="button" aria-label="Close" aria-controls="alert-info"></button>
+                        ℹ️ alert-info
+                    </header>
+                    <p role="alertdialog">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quisquam
+                        voluptate earum possimus, iste distinctio consectetur atque sequi eveniet repellendus, dolore.
+                        Ullam rerum dignissimos labore, veniam cupiditate doloremque commodi illo.</p>
+                    <footer>Lorem ipsum</footer>
+                </div>
+                <div id="alert-success" class="success" role="alert">
+                    <header>
+                        <button class="close" role="button" aria-label="Close" aria-controls="alert-success"></button>
+                        ✅ alert-success
+                    </header>
+                    <p role="alertdialog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint
+                        minima officia culpa incidunt fugit inventore unde quidem voluptatibus autem repellat dolor
+                        libero non facilis a aut, odio repudiandae temporibus.</p>
+                    <footer>Lorem ipsum</footer>
+                </div>
+                <div id="alert-warning" class="warning" role="alert">
+                    <header>
+                        <button class="close" role="button" aria-label="Close" aria-controls="alert-warning"></button>
+                        ⚠️ alert-warning
+                    </header>
+                    <p role="alertdialog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi recusandae
+                        dolorem aliquid possimus dignissimos cum quas, repudiandae sapiente asperiores tempore quia
+                        soluta obcaecati odit quae natus nisi vel eveniet.</p>
+                    <footer>Lorem ipsum</footer>
+                </div>
+                <div id="alert-danger" class="danger" role="alert">
+                    <header>
+                        <button class="close" role="button" aria-label="Close" aria-controls="alert-danger"></button>
+                        🚨 alert-danger
+                    </header>
+                    <p role="alertdialog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eligendi eius
+                        ipsum ratione consectetur minima, dolorem tenetur maxime animi, consequuntur, quo rerum. Non
+                        illum repellat beatae harum eum, quos sint?</p>
+                    <footer>Lorem ipsum</footer>
+                </div>
+                <pre class="prismjs"><code class="language-html">&lt;div id="alert-info" class="info" role="alert"&gt;
+&#9;&lt;header&gt;
+&#9;&#9;&lt;button class="close" role="button" aria-controls="alert-info"&gt;&lt;/button&gt;
+&#9;&#9;ℹ️ alert-info
+&#9;&lt;/header&gt;
+&#9;&lt;p role="alertdialog"&gt; ... &lt;/p&gt;
+&#9;&lt;footer role="contentinfo"&gt;Lorem ipsum&lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+                <p role="alert">
+                    Attribute <code>p role="alertdialog"</code> has no effect but is recommended for accessibility.
+                </p>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__buttons">
+                <header>
+                    <h3>📍 Buttons</h3>
+                </header>
+                <p>
+                    Four types of buttons can be displayed :
+                    <ul>
+                        <li><code>class="info"</code></li>
+                        <li><code>class="success"</code></li>
+                        <li><code>class="warning"</code></li>
+                        <li><code>class="danger"</code></li>
+                    </ul>
+                </p>
+                <div class="grid">
+                    <div>
+                        <p>
+                            <button>
+                                ℹ️ This is a <strong>default</strong> button
+                            </button>
+                        </p>
+                        <p>
+                            <button>
+                                ℹ️ This is an <strong>info</strong> button
+                            </button>
+                        </p>
+                        <p>
+                            <button class="success">
+                                ✅ This is a <strong>success</strong> button
+                            </button>
+                        </p>
+                        <p>
+                            <button class="warning">
+                                ⚠️ This is a <strong>warning</strong> button !
+                            </button>
+                        </p>
+                        <p>
+                            <button class="danger">
+                                🚨 This is a <strong>danger</strong> button !!!
+                            </button>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <button disabled>
+                                ℹ️ This default button is <strong>disabled</strong>
+                            </button>
+                        </p>
+                        <p>
+                            <button disabled>
+                                ℹ️ This info button is <strong>disabled</strong>
+                            </button>
+                        </p>
+                        <p>
+                            <button class="success" disabled>
+                                ✅ This success button is <strong>disabled</strong>
+                            </button>
+                        </p>
+                        <p>
+                            <button class="warning" disabled>
+                                ⚠️ This warning button is <strong>disabled</strong>
+                            </button>
+                        </p>
+                        <p>
+                            <button class="danger" disabled>
+                                🚨 This danger button is <strong>disabled</strong>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <pre class="prismjs"><code class="language-html">&lt;button class="success"&gt;
+&#9;✅ This is a &lt;strong&gt;success&lt;/strong&gt; button
+&lt;/button&gt;</code></pre>
+                <p role="alert">
+                    Buttons can own a <code>disabled</code> state.
+                </p>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__badges">
+                <header>
+                    <h3>📍 Badges</h3>
+                </header>
+                <p>
+                    Badges are small inline indicators used to highlight status or counts. Use any <code>&lt;small&gt;</code> element with <code>role="status"</code>.
+                </p>
+                <p>
+                    Variants:
+                    <ul>
+                        <li><code>class="info"</code></li>
+                        <li><code>class="success"</code></li>
+                        <li><code>class="warning"</code></li>
+                        <li><code>class="danger"</code></li>
+                    </ul>
+                </p>
+                <p class="overflow-auto nowrap">
+                    <small role="status">Default</small>
+                    <small role="status" class="info">Info</small>
+                    <small role="status" class="success">Success</small>
+                    <small role="status" class="warning">Warning</small>
+                    <small role="status" class="danger">Danger</small>
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;small role="status"&gt;Default&lt;/small&gt;
+&lt;small role="status" class="info"&gt;Info&lt;/small&gt;
+&lt;small role="status" class="success"&gt;Success&lt;/small&gt;
+&lt;small role="status" class="warning"&gt;Warning&lt;/small&gt;
+&lt;small role="status" class="danger"&gt;Danger&lt;/small&gt;</code></pre>
+                <p>
+                    Badges can also be displayed inside buttons:
+                </p>
+                <p>
+                    <button>✉️&nbsp;You have unread messages <small role="status" class="danger">5</small></button>
+                </p>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__toolbar">
+                <header role="banner">
+                    <h3>📍 Toolbars</h3>
+                    <div>
+                        <ul role="toolbar">
+                            <li role="menuitem">
+                                <a role="button" class="animate" data-tooltip="bookmark">⭐</a>
+                            </li>
+                            <li role="menuitem">
+                                <a role="button" class="animate" data-tooltip="upvote">👍</a>
+                            </li>
+                            <li role="menuitem">
+                                <a role="button" class="animate" data-animation="zoom-in-blur"
+                                    data-tooltip="like">♥️</a>
+                            </li>
+                            <li role="menuitem">
+                                <button class="animate" data-tooltip="TangoMan75">
+                                    &nbsp;T&nbsp;
+                                </button>
+                            </li>
+                        </ul>
+                        <span class="divider"></span>
+                        <ul role="toolbar">
+                            <li role="menuitem">
+                                <a data-toast="You clicked the info button on the toolbar."
+                                    data-toast-position="left"
+                                    data-toast-type="info">
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- info -->
+                                        <circle cx="8" cy="8" r="8" fill="#01aaff" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a data-toast="You clicked the success button on the toolbar."
+                                    data-toast-position="left"
+                                    data-toast-type="success">
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- success -->
+                                        <circle cx="8" cy="8" r="8" fill="#4eb31b" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a data-toast="You clicked the warning button on the toolbar."
+                                    data-toast-position="left"
+                                    data-toast-type="warning">
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- warning -->
+                                        <circle cx="8" cy="8" r="8" fill="#ffbf00" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a data-toast="You clicked the danger button on the toolbar."
+                                    data-toast-position="left"
+                                    data-toast-type="danger">
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- danger -->
+                                        <circle cx="8" cy="8" r="8" fill="#ee402e" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <p>
+                    <strong>Toolbars</strong> are used to group buttons in a compact way.
+                    Texts, links, buttons, emojis, fonticons and inline <code>svg</code> inside
+                    <strong>toolbars</strong> will align vertically.
+                </p>
+                <p>
+                    A toolbar must own a <code>role="toolbar"</code> attribute to be used as a toolbar.
+                    All items contained in the toolbar must own <code>role="menuitem"</code> attribute to be displayed properly.
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;ul role="toolbar"&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;button&gt;⭐&lt;/button&gt;
+&#9;&lt;/li&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;a role="button"&gt;👍&lt;/a&gt;
+&#9;&lt;/li&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;a href="https://tangoman.io"&gt;♥️&lt;/a&gt;
+&#9;&lt;/li&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;button&gt;T&lt;/button&gt;
+&#9;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <footer role="contentinfo" class="flex">
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__menubar">
+                <header role="banner">
+                    <h3>📍 Menubars</h3>
+                    <div class="flex-right">
+                        <div role="menu">
+                            <ul role="menubar">
+                                <li role="menuitem">
+                                    <a class="contrast" aria-label="GitHub repository" href="https://github.com/TangoMan75/pivot"
+                                        target="_blank" rel="noopener noreferrer nofollow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 496 512">
+                                            <path
+                                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                            </path>
+                                        </svg>
+                                        <small>
+                                            GitHub
+                                        </small>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="contrast" aria-label="Twitter" href="https://x.com/tangomanparis" target="_blank"
+                                        rel="noopener noreferrer nofollow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                                            <path
+                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                            </path>
+                                        </svg>
+                                        <small>
+                                            Twitter
+                                        </small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="menu">
+                            <ul role="menubar">
+                                <li role="menuitem">
+                                    <span class="icon icon-date"></span>
+                                    <small>1970-01-01</small>
+                                </li>
+                                <li role="menuitem">
+                                    <span class="icon icon-time"></span>
+                                    <small>00:00</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul role="toolbar">
+                            <span class="divider"></span>
+                            <li role="menuitem">
+                                <a>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- info -->
+                                        <circle cx="8" cy="8" r="8" fill="#01aaff" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- success -->
+                                        <circle cx="8" cy="8" r="8" fill="#4eb31b" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- warning -->
+                                        <circle cx="8" cy="8" r="8" fill="#ffbf00" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><!-- danger -->
+                                        <circle cx="8" cy="8" r="8" fill="#ee402e" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <p>
+                    <strong>Menubars</strong> are used to group links in a collapsible menu.
+                </p>
+                <p>
+                    Collapsible menubar are built with an element with <code>role="menu"</code> as a wrapper and an element with <code>role="menubar"</code> as direct child.
+                    All items contained in the menubar must own <code>role="menuitem"</code> attribute to be displayed properly.
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;ul role="menubar"&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;span class="icon icon-date"&gt;&lt;/span&gt;
+&#9;&#9;&lt;small&gt;2025-01-01&lt;/small&gt;
+&#9;&lt;/li&gt;
+&#9;&lt;li role="menuitem"&gt;
+&#9;&#9;&lt;span class="icon icon-time"&gt;&lt;/span&gt;
+&#9;&#9;&lt;small&gt;12:30&lt;/small&gt;
+&#9;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <footer role="contentinfo" class="flex">
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                    <div class="flex-right">
+                        <div role="menu">
+                            <ul role="menubar">
+                                <li role="menuitem">
+                                    <span class="icon icon-date"></span>
+                                    <small>1970-01-01</small>
+                                </li>
+                                <li role="menuitem">
+                                    <span class="icon icon-time"></span>
+                                    <small>00:00</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+            <article id="pivot__toasts">
+                <header>
+                    <h3>📍 Toasts</h3>
+                </header>
+                <p>
+                    A element must own a <code>data-toast=" ... "</code> attribute to display a toast message.
+                </p>
+                <p>
+                    Four types of toasts can be displayed :
+                    <ul>
+                        <li><code>data-toast-type="info"</code></li>
+                        <li><code>data-toast-type="success"</code></li>
+                        <li><code>data-toast-type="warning"</code></li>
+                        <li><code>data-toast-type="danger"</code></li>
+                    </ul>
+                </p>
+                <p>
+                    Toasts can also own the following attributes :
+                    <ul>
+                        <li><code>data-toast-icon="👋"</code></li>
+                        <li><code>data-toast-title="Hello World !</code></li>
+                        <li><code>data-toast-fonticon="icon icon-search"</code></li>
+                        <li><code>data-toast-footer="lorem ipsum"</code></li>
+                    </ul>
+                </p>
+                <p>
+                    Toasts can also own custom classNames :
+                    <ul>
+                        <li><code>data-toast-class-name="custom-example-class"</code></li>
+                    </ul>
+                </p>
+                <p>
+                    Duration : Toasts can be displayed for a specific duration (in milliseconds) :
+                    <ul>
+                        <li><code>data-toast-duration="3000"</code> <em>(duration is defined in miliseconds)</em></li>
+                        <li>If set to <code>data-toast-duration="0"</code>, toast stays up until closed by user</li>
+                    </ul>
+                </p>
+                <p>
+                    Position : Toasts can be displayed in four different positions :
+                    <ul>
+                        <li><code>data-toast-position="top"</code></li>
+                        <li><code>data-toast-position="right"</code></li>
+                        <li><code>data-toast-position="bottom"</code></li>
+                        <li><code>data-toast-position="left"</code></li>
+                    </ul>
+                </p>
+                <p>
+                    Test :
+                    <ol>
+                        <li>Click on a button to display a toast.</li>
+                        <li>Click anywhere on the toast to dissmiss.</li>
+                        <li>Toasts are automatically hidden after 5 seconds.</li>
+                    </ol>
+                </p>
+                <p class="grid">
+                    <button data-toast="This is a info message." data-toast-position="left">
+                        ℹ️&nbsp;Click here to display an <strong>info</strong>
+                    </button>
+                    <button class="success" data-toast="This is a success message." data-toast-type="success">
+                        ✅&nbsp;Click here to display a <strong>success</strong> message
+                    </button>
+                </p>
+                <p class="grid">
+                    <button class="warning" data-toast="This is a warning message !" data-toast-type="warning" data-toast-position="top">
+                        ⚠️&nbsp;Click here to display a <strong>warning</strong> message
+                    </button>
+                    <button class="danger" data-toast="This is a danger message !!!" data-toast-type="danger" data-toast-position="bottom">
+                        🚨&nbsp;Click here to display a <strong>danger</strong> message
+                    </button>
+                </p>
+                <p>
+                    <button data-toast-fonticon="icon icon-loading" data-toast-title="Loading ..." data-toast="This toast has a nice loading fonticon.">
+                        <span class="icon icon-loading"></span>
+                       &nbsp;Click here to display a <strong>loading</strong> message
+                    </button>
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;button class="success"
+&#9;data-toast="This is a success message."
+&#9;data-toast-type="success"
+&gt;
+&#9;✅ Click here to display a &lt;strong&gt;success&lt;/strong&gt; message
+&lt;/button&gt;</code></pre>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__tabs">
+                <header>
+                    <h3>📍 Tabs</h3>
+                </header>
+                <p>
+                    Tabs are used to display content in a compact way. They can be used to group content in a
+                    <strong>tabbed</strong> interface.
+                </p>
+                <p>
+                    <strong>Features:</strong>
+                    <ul>
+                        <li>Uses semantic roles: <code>role="tablist"</code>, <code>role="tab"</code>, and <code>role="tabpanel</code> for accessibility.</li>
+                        <li>Supports keyboard navigation (arrow keys, Home/End, Enter/Space).</li>
+                        <li>Responsive and wraps tabs if needed.</li>
+                        <li>Disabled tabs can use <code>disabled</code> or <code>aria-disabled="true"</code>.</li>
+                    </ul>
+                </p>
+                <ul class="tabs" role="tablist">
+                    <li id="tab-1" role="tab" aria-controls="panel-1">
+                        <button class="close" role="button" aria-label="Close"></button>
+                        Panel 1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li id="tab-2" role="tab" aria-controls="panel-2">
+                        <button class="close" role="button" aria-label="Close"></button>
+                        Panel 2
+                    </li>
+                    <li id="tab-3" role="tab" aria-controls="panel-3">
+                        <button class="close" role="button" aria-label="Close"></button>
+                        Panel 3
+                    </li>
+                    <li id="tab-4" role="tab" aria-controls="panel-4" aria-disabled="true" disabled>
+                        <button class="close" role="button" aria-label="Close"></button>
+                        Panel 4 (disabled)
+                    </li>
+                </ul>
+                <article id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint minima officia culpa incidunt fugit inventore unde quidem voluptatibus autem repellat dolor libero non facilis a aut, odio repudiandae temporibus.</p>
+                    <p>Molestias iusto placeat nesciunt cumque, sed earum? Incidunt aliquid repudiandae numquam nulla facere cumque consequuntur repellat, corporis. Quos, minus eveniet facere et.</p>
+                    <footer>
+                        <small>Panel 1.</small>
+                    </footer>
+                </article>
+                <article id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, corrupti enim nemo quis adipisci hic quidem molestiae earum. Necessitatibus, vero provident quas officia hic error? Tenetur molestiae vitae officia atque.</p>
+                    <p>Sint sequi recusandae dolorem aliquid possimus dignissimos cum quas, repudiandae sapiente asperiores tempore quia soluta obcaecati odit quae natus nisi vel eveniet.</p>
+                    <footer>
+                        <small>Panel 2.</small>
+                    </footer>
+                </article>
+                <article id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt, doloribus perferendis labore commodi optio veniam reprehenderit expedita explicabo eaque iure cum dolore sequi similique quae molestiae quaerat dolorum maxime?</p>
+                    <p>Quidem eligendi eius ipsum ratione consectetur minima, dolorem tenetur maxime animi, consequuntur, quo rerum. Non illum repellat beatae harum eum, quos sint?</p>
+                    <footer>
+                        <small>Panel 3.</small>
+                    </footer>
+                </article>
+                <article id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt, doloribus perferendis labore commodi optio veniam reprehenderit expedita explicabo eaque iure cum dolore sequi similique quae molestiae quaerat dolorum maxime?</p>
+                    <p>Quidem eligendi eius ipsum ratione consectetur minima, dolorem tenetur maxime animi, consequuntur, quo rerum. Non illum repellat beatae harum eum, quos sint?</p>
+                    <footer>
+                        <small>Panel 4.</small>
+                    </footer>
+                </article>
+                <hr>
+                <p>
+                    <strong>Tabs:</strong>
+                    <ul>
+                        <li>Each tab requires a <code>role="tab"</code> attribute.</li>
+                        <li>Each tab should have <code>aria-controls</code> attribute that references the id of the corresponding panel.</li>
+                        <li>The first tab is selected by default.</li>
+                    </ul>
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;ul class="tabs" role="tablist"&gt;
+&#9;&lt;li id="tab-1" role="tab" aria-controls="panel-1"&gt;
+&#9;&#9;&lt;button class="close" role="button"&gt;&lt;/button&gt;
+&#9;&#9;Panel 1
+&#9;&lt;/li&gt;
+&#9;&lt;li&gt; ... &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <p>
+                    <strong>Panels:</strong>
+                    <ul>
+                        <li>Each panel requires a <code>role="tabpanel"</code> attribute.</li>
+                        <li>Attribute <code>aria-labelledby=" ... "</code> that references the id of the corresponding tab is optional but recommended for accessibility.</li>
+                    </ul>
+                </p>
+                <pre class="prismjs"><code class="language-html">&lt;article id="panel-1" role="tabpanel" aria-labelledby="tab-1"&gt;
+&#9;&lt;header&gt;
+&#9;&#9;&lt;h3&gt;Panel 1&lt;/h3&gt;
+&#9;&lt;/header&gt;
+&#9;&lt;p&gt; ... &lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+            <article id="pivot__flex">
+                <header>
+                    <h3>📍 Flex</h3>
+                </header>
+                <p>
+                    <strong>pivot.css</strong> provides a set of utility classes to help you build a responsive layout.
+                    You can use the following classes to create a flexbox layout :
+                    <ul>
+                        <li><code>.flex</code> spaces child elements evenly, with the first at the start and the last at the end. </li>
+                        <li><code>.flex-right</code> enables Flexbox but keeps the container inline and aligns child elements to the right.</li>
+                    </ul>
+                </p>
+            </article>
+            <article id="pivot__grid">
+                <header>
+                    <h3>📍 Grid</h3>
+                </header>
+                <p>
+                    <code>footer</code> from articles displayed in a grid will align at the bottom of each parent <code>article</code> automatically.
+                </p>
+                <div class="grid">
+                    <article id="grid-1">
+                        <header>
+                            <h2>Grid 1</h2>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Nobis iure dignissimos facilis amet officiis debitis praesentium itaque necessitatibus?</p>
+                        <p>Repellendus similique iure in quia officiis accusamus aut soluta, nesciunt iusto impedit!</p>
+                        <footer>
+                            <a class="no-decoration" href="#top">⬆️</a>
+                        </footer>
+                    </article>
+                    <article id="grid-2">
+                        <header>
+                            <h2>Grid 2</h2>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, neque, sunt vel cumque corporis,
+                            Iusto eaque perferendis voluptate.</p>
+                        <p>Esse, facilis ducimus?</p>
+                        <footer>
+                            <a class="no-decoration" href="#top">⬆️</a>
+                        </footer>
+                    </article>
+                    <article id="grid-3">
+                        <header>
+                            <h2>Grid 3</h2>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a voluptas excepturi explicabo,
+                            eveniet quos, recusandae similique, dolores enim dolor inventore magnam! Commodi, accusamus
+                            inventore necessitatibus laborum odit quod similique.</p>
+                        <footer>
+                            <a class="no-decoration" href="#top">⬆️</a>
+                        </footer>
+                    </article>
+                </div>
+            </article>
+            <article id="pico__icons">
+                <header>
+                    <h3>📍 pico.css Icons</h3>
+                </header>
+                <p>
+                    <strong>pivot.css</strong> provides a set of utility classes to help reuse
+                    <a href="https://picocss.com" target="_blank" rel="noopener noreferrer nofollow">picocss</a>
+                    icons in your HTML by using the
+                    <code>class="icon icon-[icon-name]"</code> class in a <code>&lt;span&gt;</code> or <code>&lt;i&gt;</code> element.
+                </p>
+                <p>Availlable icons are the following :</p>
+                <div class="grid">
+                    <ul>
+                        <li>
+                            <span class="icon icon-checkbox"></span>
+                            <code>icon icon-checkbox</code>
+                            <i>(used on <code>[type=checkbox]:checked</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-minus"></span>
+                            <code>icon icon-minus</code>
+                            <i>(used on <code>[type=checkbox]:indeterminate</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-chevron"></span>
+                            <code>icon icon-chevron</code>
+                            <i>(used on <code>&lt;select&gt;</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-date"></span>
+                            <code>icon icon-date</code>
+                            <i>(used on <code>&lt;input type=&quot;date&quot;&gt;</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-time"></span>
+                            <code>icon icon-time</code>
+                            <i>(used on <code>&lt;input type=&quot;time&quot;&gt;</code>)</i>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="icon icon-search"></span>
+                            <code>icon icon-search</code>
+                            <i>(used on <code>&lt;input type=&quot;search&quot;&gt;</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-close"></span>
+                            <code>icon icon-close</code>
+                            <i>(used on <code>&lt;button class=&quot;close&quot;&gt;</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-loading"></span>
+                            <code>icon icon-loading</code>
+                            <i>(used on <code>[aria-busy=true]</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-valid"></span>
+                            <code>icon icon-valid</code>
+                            <i>(used on <code>[aria-invalid=false]</code>)</i>
+                        </li>
+                        <li>
+                            <span class="icon icon-invalid"></span>
+                            <code>icon icon-invalid</code>
+                            <i>(used on <code>[aria-invalid=true]</code>)</i>
+                        </li>
+                    </ul>
+                </div>
+                <footer>
+                    <a class="no-decoration" href="#top">⬆️ Top</a>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer role="contentinfo" class="container footer">
+        <ul>
+            <li>
+                <p>&copy; 2025 Matthias Morin</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Author : <a href="https://tangoman.io" target="_blank" rel="noopener noreferrer nofollow">Matthias
+                        Morin</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Made with : <a href="https://picocss.com" target="_blank"
+                    rel="noopener noreferrer nofollow">picocss</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Made with : <a href="https://prismjs.com" target="_blank" rel="noopener noreferrer nofollow">prismjs</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Icons : <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer nofollow">Font Awesome by Dave Gandy</a>
+                    License <a href="http://scripts.sil.org/OFL" target="_blank" rel="noopener noreferrer nofollow">SIL OFL 1.1</a>
+                </small>
+            </li>
+            <li>
+                <small>
+                    <span class="icon icon-search"></span>&nbsp;
+                    Icons :
+                    <a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji" target="_blank"
+                    rel="noopener noreferrer nofollow">Google Noto Color Emoji</a>
+                    License <a href="http://scripts.sil.org/OFL" target="_blank" rel="noopener noreferrer nofollow">SIL OFL 1.1</a>
+                </small>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="./js/pivot.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
