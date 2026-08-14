@@ -1,0 +1,14 @@
+/* fix article grid layout */
+// keep the same height for all paragraphs in the article,
+// and keep footer aligned at the bottom
+.grid > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  > p,
+  > ul,
+  > ol {
+    flex-grow: 1;
+  }
+}

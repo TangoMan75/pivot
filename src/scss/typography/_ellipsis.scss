@@ -1,0 +1,7 @@
+/* ellipsis */
+// truncate text with an ellipsis when it overflows its container
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

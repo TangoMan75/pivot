@@ -1,0 +1,12 @@
+/* flex  */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-right {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

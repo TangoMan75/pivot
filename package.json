@@ -1,0 +1,84 @@
+{
+  "name": "@tangoman75/pivot",
+  "version": "0.1.0",
+  "description": "Pico Framework extension",
+  "author": "Matthias Morin",
+  "main": "css/pivot.min.css",
+  "homepage": "https://tangoman.io",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TangoMan75/pivot.git"
+  },
+  "keywords": [
+    "css",
+    "css-framework",
+    "dark-mode",
+    "dark-theme",
+    "lightweight",
+    "minimal",
+    "minimalist",
+    "minimalistic",
+    "native-html",
+    "scss-framework",
+    "semantic"
+  ],
+  "bugs": {
+    "url": "https://github.com/TangoMan75/pivot/issues"
+  },
+  "scripts": {
+    "build": "npm run -s start && npm run -s lint:js && npm run -s lint:css && npm run -s build:js && npm run -s build:css && npm run -s done",
+    "watch": "nodemon -q --watch ./src/ --ext js,scss --exec 'npm run -s build'",
+    "watch:js": "nodemon -q --watch ./src/js/ --ext js --exec 'npm run -s build:js'",
+    "watch:css": "nodemon -q --watch ./src/scss/ --ext scss --exec 'npm run -s lint:css && npm run -s build:css'",
+    "lint": "npm run -s prelint && npm run -s lint:js && npm run -s lint:css",
+    "lint:js": "eslint ./src/js/ --ext .js --cache",
+    "lint:css": "npm run -s lint:css:prettier && npm run -s lint:css:sort-scss",
+    "lint:css:prettier": "prettier --write --log-level silent './src/scss/**/*.scss'",
+    "lint:css:sort-scss": "postcss ./src/scss/**/*.scss --replace",
+    "build:js": "npm run -s prebuild:js && npx webpack",
+    "build:css": "npm run -s prebuild:css && npm run -s build:css:sass && npm run -s build:css:autoprefix && npm run -s build:css:minify",
+    "build:css:sass": "sass --no-source-map --style expanded --no-error-css ./src/scss/:./dist/css/",
+    "build:css:autoprefix": "npm run -s prebuild:autoprefix && postcss --config css --replace ./dist/css/pivot.css",
+    "build:css:minify": "npm run -s prebuild:minify && cleancss -O1 --with-rebase --batch --batch-suffix .min ./dist/css/pivot.css",
+    "test": "jest",
+    "prelint": "echo '\\033[95m[@TangoMan75/pivot] ✨ Lint\\033[0m'",
+    "prebuild:js": "echo '\\033[95m[@TangoMan75/pivot] ✨ Compile JS\\033[0m'",
+    "prebuild:css": "echo '\\033[95m[@TangoMan75/pivot] ✨ Compile CSS\\033[0m'",
+    "prebuild:autoprefix": "echo '\\033[95m[@TangoMan75/pivot] ✨ Autoprefix\\033[0m'",
+    "prebuild:minify": "echo '\\033[95m[@TangoMan75/pivot] ✨ Minify\\033[0m'",
+    "start": "echo '\\033[96m[@TangoMan75/pivot] ✨ Start\\033[0m'",
+    "done": "echo '\\033[32m[@TangoMan75/pivot] ✨ Done\\033[0m'"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "autoprefixer": "^10.5.4",
+    "babel-jest": "^30.4.1",
+    "caniuse-lite": "^1.0.30001809",
+    "clean-css-cli": "^5.6.3",
+    "css-declaration-sorter": "^7.4.0",
+    "eslint": "^10.8.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.11.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "nodemon": "^3.1.14",
+    "postcss": "^8.5.26",
+    "postcss-cli": "^11.0.1",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.9.6",
+    "sass": "^1.102.0",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "core-js": "^3.50.0"
+  },
+  "resolutions": {
+    "glob": "^9.0.0"
+  }
+}

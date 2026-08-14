@@ -1,0 +1,12 @@
+/* Prism.js syntax highlighting styles */
+.prismjs code {
+  font-size: smaller;
+}
+
+pre.prismjs {
+  background-color: var(--sand-800);
+}
+
+[data-theme="dark"] pre.prismjs {
+  background-color: var(--sand-750);
+}
