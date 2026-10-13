@@ -1,0 +1,36 @@
+/* navbar */
+// if element has no children `.container` then set properties to itself
+// https://www.w3.org/TR/wai-aria-1.0/roles#banner
+[role="banner"],
+body > header {
+  &:not(:has(.container)),
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+body > header nav a {
+  padding: var(--pico-nav-link-spacing-vertical) var(--pico-nav-link-spacing-horizontal) !important;
+}
+
+// sticky header
+@media (min-width: 769px) {
+  body > header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(1rem);
+    background-color: var(--pico-background-color);
+
+    transition:
+      border-top-color 0.4s ease-in-out,
+      box-shadow 0.4s ease-in-out;
+
+    &.fixed {
+      border-bottom-color: var(--pico-header-border-color);
+      box-shadow: var(--pico-card-box-shadow);
+    }
+  }
+}
