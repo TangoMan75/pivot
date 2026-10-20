@@ -1,0 +1,9 @@
+main hgroup {
+  h1 {
+    margin-bottom: var(--pico-spacing);
+
+    @media (min-width: 576px) {
+      --pico-font-size: 2.5rem;
+    }
+  }
+}

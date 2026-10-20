@@ -1,0 +1,11 @@
+/* section */
+section > header {
+  margin-bottom: var(--pico-block-spacing-vertical);
+
+  &::after {
+    display: block;
+    width: 33%;
+    border-bottom: 5px solid var(--pico-primary);
+    content: "";
+  }
+}

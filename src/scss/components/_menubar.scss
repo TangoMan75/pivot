@@ -1,0 +1,58 @@
+/* menubar */
+// https://www.w3.org/TR/wai-aria-1.0/roles#menubar
+[role="menubar"] {
+  li,
+  [role="menuitem"] {
+    &:not(:has(a)),
+    a {
+      padding: 0 var(--pico-nav-link-spacing-horizontal);
+    }
+  }
+
+  // hide close button
+  > .close {
+    display: none;
+  }
+}
+
+// responsive collapsible menu
+@media (max-width: 768px) {
+  [role="menubar"] {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    > li,
+    > [role="menuitem"] {
+      display: none;
+    }
+
+    > .close {
+      display: block;
+      padding: var(--pico-spacing);
+      background-image: var(--pico-icon-chevron);
+    }
+
+    &[aria-expanded="true"] {
+      display: block;
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      border: var(--pico-border-width) solid var(--pico-muted-border-color);
+      border-radius: var(--pico-border-radius);
+      background-color: var(--pico-background-color);
+      box-shadow: var(--pico-dropdown-box-shadow);
+
+      > li,
+      > [role="menuitem"] {
+        display: block; // stack items
+        margin: var(--pico-spacing);
+      }
+
+      > .close {
+        background-image: var(--pico-icon-close);
+      }
+    }
+  }
+}
