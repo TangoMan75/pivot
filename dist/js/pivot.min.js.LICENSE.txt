@@ -1,0 +1,9 @@
+/**
+ * TangoMan Pivot CSS
+ *
+ * @author  "Matthias Morin" <mat@tangoman.io>
+ * @version 0.1.0
+ * @license MIT
+ * @link    https://picocss.com
+ * @link    https://github.com/TangoMan75/pivot
+ */
